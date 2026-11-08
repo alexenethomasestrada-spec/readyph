@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReadyPH – Are you ready?</title>
+<meta name="description" content="Check how prepared your family is for a typhoon, tsunami, or earthquake. Free checklists, supply amounts, and emergency contacts for the Philippines.">
+<meta property="og:site_name" content="ReadyPH">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ReadyPH – How ready is your family?">
+<meta property="og:description" content="Free disaster checklists, supply amounts, and emergency contacts for Filipino families.">
+<meta name="theme-color" content="#10262f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%80%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<h1>ReadyPH</h1>
+<p class="note">How prepared is your family for a disaster?</p>
+
+<div class="hero">
+<div class="big" id="tot">0%</div>
+<div id="lv" style="font-weight:700"></div>
+<div class="bar"><i id="bar"></i></div>
+<p>This is your overall score across typhoon, tsunami, and earthquake. Choose a disaster below, then tick each item you already have.</p>
+<label class="n" for="n">People in your household <input id="n" type="number" min="1" max="30" inputmode="numeric"></label>
+</div>
+
+<div class="tabs" id="tabs"></div>
+<div id="panel"></div>
+
+<div class="card"><h2>How many days will your supplies last?</h2>
+<p class="note">This uses the number of people in your household above. It assumes 3 liters of water and 3 meals per person per day.</p>
+<label class="n" for="w">Drinking water you have (liters) <input id="w" type="number" min="0" inputmode="decimal"></label>
+<label class="n" for="f">Meals of food you have <input id="f" type="number" min="0" inputmode="numeric"></label>
+<div id="res" style="margin-top:14px"></div></div>
+
+<section class="card" id="hotlines"><h2>National emergency hotlines</h2><div id="hl"></div>
+<p class="note">Please confirm these numbers on each agency’s official website, because numbers can change.</p></section>
+
+<p class="note">Supply amounts are estimates: 3 liters of water and 3 meals per person per day, for 3 days. Add more for babies, seniors, and pets. Ticks are saved only on this device.</p>
+<p><button class="btn" id="reset">Clear all ticks</button></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
